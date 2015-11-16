@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>Imaginary time evolution to calculate the ground state.</li>
 <li>Stationary external potential.</li>
 <li>Command-line interface (CLI) and application programming interface (API) for flexible use.</li>
-<li><a href="https://pypi.python.org/pypi/trottersuzuki">Python</a> and <a href="https://www.mathworks.com/matlabcentral/fileexchange/51975-mextrotter">MATLAB</a> wrappers are provided.</li>
+<li><a href="http://trotter-suzuki-mpi.readthedocs.org">Python</a> and <a href="https://www.mathworks.com/matlabcentral/fileexchange/51975-mextrotter">MATLAB</a> wrappers are provided.</li>
 <li>Cache optimized multi-core, SSE, GPU, and hybrid kernels.</li>
 <li>Near-linear scaling across multiple nodes with computations overlapping communication.</li>
 </ul>
@@ -156,7 +156,7 @@ imag_time         Optional parameter to calculate imaginary time evolution
 <li><code>groundstate_of_BEC_in_harmonic_pot.cpp</code>: Imaginary time evolution of a Bose-Einstein Condensate trapped in a harmonic potential.</li>
 </ul>
 <p><b>Python and MATLAB Interfaces</b></p>
-<p>The CPU and SSE kernels are accessible from Python and MATLAB. The Python version is available on the <a href="https://pypi.python.org/pypi/trottersuzuki">Python Package Index</a>, whereas the MATLAB version is available on the <a href="http://www.mathworks.com/matlabcentral/fileexchange/51975-mextrotter">MATLAB File Exchange</a>. Please refer to the documentation of these packages for further information.</p>
+<p>The CPU and SSE kernels are accessible from Python and MATLAB. The Python version is available on the <a href="https://pypi.python.org/pypi/trottersuzuki">Python Package Index</a> with documentation on <a href="http://trotter-suzuki-mpi.readthedocs.org">Read the Docs</a>, whereas the MATLAB version is available on the <a href="http://www.mathworks.com/matlabcentral/fileexchange/51975-mextrotter">MATLAB File Exchange</a>. Please refer to the documentation of these packages for further information.</p>
 <h2>Compilation &amp; Installation </h2>
 <p>The code was tested with the GNU Compiler Chain (GCC), with Intel compilers, and with Visual Studio. The unit testing framework is separate and it requires <a href="http://sourceforge.net/projects/cppunit/">CppUnit</a> to compile. To use the GPU-accelerated version, CUDA and a GPU with at least Compute Cabapility 2.0 are necessary.</p>
 <p><b>Building on Linux</b></p>
