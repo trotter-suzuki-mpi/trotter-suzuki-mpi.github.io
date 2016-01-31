@@ -22,9 +22,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
   </td>
  </tr>
@@ -39,6 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
+      <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -64,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,48 +94,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ITrotterKernel Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class defines the prototipe of the kernel classes: CPU, GPU, Hybrid.  
+ <a href="classITrotterKernel.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="trottersuzuki_8h_source.html">trottersuzuki.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ITrotterKernel:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classITrotterKernel.png" usemap="#ITrotterKernel_map" alt=""/>
   <map id="ITrotterKernel_map" name="ITrotterKernel_map">
-<area href="classCC2Kernel.html" alt="CC2Kernel" shape="rect" coords="0,56,129,80"/>
-<area href="classCPUBlock.html" alt="CPUBlock" shape="rect" coords="139,56,268,80"/>
-<area href="classCPUBlockSSEKernel.html" alt="CPUBlockSSEKernel" shape="rect" coords="278,56,407,80"/>
-<area href="classHybridKernel.html" alt="HybridKernel" shape="rect" coords="417,56,546,80"/>
+<area href="classCPUBlock.html" title="This class defines the CPU kernel. " alt="CPUBlock" shape="rect" coords="0,56,89,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a005c0908b297c041efcc2bea2aa84836"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a005c0908b297c041efcc2bea2aa84836"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>run_kernel</b> ()=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#a005c0908b297c041efcc2bea2aa84836">run_kernel</a> ()=0</td></tr>
+<tr class="memdesc:a005c0908b297c041efcc2bea2aa84836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evolve the remaining blocks in the inner part of the tile. <br /></td></tr>
 <tr class="separator:a005c0908b297c041efcc2bea2aa84836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5434700d6e59ac252ba0a9bdccf3e4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5434700d6e59ac252ba0a9bdccf3e4c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>run_kernel_on_halo</b> ()=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#ad5434700d6e59ac252ba0a9bdccf3e4c">run_kernel_on_halo</a> ()=0</td></tr>
+<tr class="memdesc:ad5434700d6e59ac252ba0a9bdccf3e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evolve blocks of wave function at the edge of the tile. This comprises the halos. <br /></td></tr>
 <tr class="separator:ad5434700d6e59ac252ba0a9bdccf3e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9476200c43eed164a396358357302d4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9476200c43eed164a396358357302d4f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>wait_for_completion</b> (int iteration)=0</td></tr>
-<tr class="separator:a9476200c43eed164a396358357302d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc9e874991f967c823dd7deef8565566"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc9e874991f967c823dd7deef8565566"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>get_sample</b> (size_t dest_stride, size_t x, size_t y, size_t width, size_t height, double *dest_real, double *dest_imag) const  =0</td></tr>
-<tr class="separator:abc9e874991f967c823dd7deef8565566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3486f79df9768b14817e2b4063b851e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3486f79df9768b14817e2b4063b851e8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#a3486f79df9768b14817e2b4063b851e8">wait_for_completion</a> ()=0</td></tr>
+<tr class="memdesc:a3486f79df9768b14817e2b4063b851e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sincronize all the processes at the end of halos communication. Perform normalization for imaginary time evolution. <br /></td></tr>
+<tr class="separator:a3486f79df9768b14817e2b4063b851e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e62d4289e3f2ac5b9b306bab75a121"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43e62d4289e3f2ac5b9b306bab75a121"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#a43e62d4289e3f2ac5b9b306bab75a121">get_sample</a> (size_t dest_stride, size_t x, size_t y, size_t width, size_t height, double *dest_real, double *dest_imag, double *dest_real2=0, double *dest_imag2=0) const  =0</td></tr>
+<tr class="memdesc:a43e62d4289e3f2ac5b9b306bab75a121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the evolved wave function. <br /></td></tr>
+<tr class="separator:a43e62d4289e3f2ac5b9b306bab75a121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe2636dccaa446541a4f07969af5732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fe2636dccaa446541a4f07969af5732"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#a3fe2636dccaa446541a4f07969af5732">normalization</a> ()=0</td></tr>
+<tr class="memdesc:a3fe2636dccaa446541a4f07969af5732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalization of the two components wave function. <br /></td></tr>
+<tr class="separator:a3fe2636dccaa446541a4f07969af5732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1400c4fe27a82dc265ba321fd1a36d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1400c4fe27a82dc265ba321fd1a36d9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#ad1400c4fe27a82dc265ba321fd1a36d9">rabi_coupling</a> (double var, double delta_t)=0</td></tr>
+<tr class="memdesc:ad1400c4fe27a82dc265ba321fd1a36d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the evolution regarding the Rabi coupling. <br /></td></tr>
+<tr class="separator:ad1400c4fe27a82dc265ba321fd1a36d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4011c6784553f183a6f7f6cba366fd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4011c6784553f183a6f7f6cba366fd5"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#ad4011c6784553f183a6f7f6cba366fd5">calculate_squared_norm</a> (bool global=true) const  =0</td></tr>
+<tr class="memdesc:ad4011c6784553f183a6f7f6cba366fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the squared norm of the wave function. <br /></td></tr>
+<tr class="separator:ad4011c6784553f183a6f7f6cba366fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab009a6155ef7a40b8f964d403ee6ca1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab009a6155ef7a40b8f964d403ee6ca1a"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>runs_in_place</b> () const  =0</td></tr>
 <tr class="separator:ab009a6155ef7a40b8f964d403ee6ca1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af14ae9d36a08eb97dc98728191ad999c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af14ae9d36a08eb97dc98728191ad999c"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const  =0</td></tr>
-<tr class="separator:af14ae9d36a08eb97dc98728191ad999c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcb79c79be0e225c6c04dfa215fe451"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfcb79c79be0e225c6c04dfa215fe451"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#acfcb79c79be0e225c6c04dfa215fe451">get_name</a> () const  =0</td></tr>
+<tr class="memdesc:acfcb79c79be0e225c6c04dfa215fe451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get kernel name. <br /></td></tr>
+<tr class="separator:acfcb79c79be0e225c6c04dfa215fe451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ab466e81ef35f5690139836b1dfdae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09ab466e81ef35f5690139836b1dfdae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#a09ab466e81ef35f5690139836b1dfdae">update_potential</a> (double *_external_pot_real, double *_external_pot_imag)=0</td></tr>
+<tr class="memdesc:a09ab466e81ef35f5690139836b1dfdae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the evolution matrix, regarding the external potential, at time t. <br /></td></tr>
+<tr class="separator:a09ab466e81ef35f5690139836b1dfdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed01f679727aba2943b28ca7f4f99af7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed01f679727aba2943b28ca7f4f99af7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>start_halo_exchange</b> ()=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#aed01f679727aba2943b28ca7f4f99af7">start_halo_exchange</a> ()=0</td></tr>
+<tr class="memdesc:aed01f679727aba2943b28ca7f4f99af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange halos between processes. <br /></td></tr>
 <tr class="separator:aed01f679727aba2943b28ca7f4f99af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb2f6888e6bf985032f682d4c7b05ac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb2f6888e6bf985032f682d4c7b05ac1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>finish_halo_exchange</b> ()=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classITrotterKernel.html#aeb2f6888e6bf985032f682d4c7b05ac1">finish_halo_exchange</a> ()=0</td></tr>
+<tr class="memdesc:aeb2f6888e6bf985032f682d4c7b05ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange halos between processes. <br /></td></tr>
 <tr class="separator:aeb2f6888e6bf985032f682d4c7b05ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/wittek/trotter-suzuki-mpi/src/<a class="el" href="kernel_8h_source.html">kernel.h</a></li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class defines the prototipe of the kernel classes: CPU, GPU, Hybrid. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>/Users/peter/trotter-suzuki-mpi/src/<a class="el" href="trottersuzuki_8h_source.html">trottersuzuki.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

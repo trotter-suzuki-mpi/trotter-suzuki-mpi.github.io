@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['option',['option',['../structoption.html',1,'']]]
+  ['itrotterkernel',['ITrotterKernel',['../classITrotterKernel.html',1,'']]]
 ];

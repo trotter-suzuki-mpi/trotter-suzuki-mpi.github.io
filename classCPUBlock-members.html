@@ -22,9 +22,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
   </td>
  </tr>
@@ -39,6 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
+      <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -64,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,17 +94,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classCPUBlock.html">CPUBlock</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>CPUBlock</b>(double *p_real, double *p_imag, double *_external_pot_real, double *_external_pot_imag, double a, double b, double _coupling_const, double _delta_x, double _delta_y, int matrix_width, int matrix_height, int halo_x, int halo_y, int *_periods, double _norm, bool imag_time) (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>finish_halo_exchange</b>() (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_name</b>() const  (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_sample</b>(size_t dest_stride, size_t x, size_t y, size_t width, size_t height, double *dest_real, double *dest_imag) const  (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>run_kernel</b>() (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>run_kernel_on_halo</b>() (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a13d2dc0c7bde743e0f592342168e99bd">a</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a90d97ffcc42fff1c5edbb055a6f02e08">alpha_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a463c2e02c46af26cb6f794e0f8dbd3ea">alpha_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#ad45b3c305691cd2e450a1299d1196679">b</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a035f6e4fb68ef6034895c45001f63101">block_height</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#ab8e6c55db5712dd011e208cf4cb22c46">block_width</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a362728776c65c73b275ea9884c4cd550">calculate_squared_norm</a>(bool global=true) const </td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a53946f88212f42e44b3de29bf4db2621">coupling_const</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a90d84eb09f792e742e516de6b1970627">CPUBlock</a>(Lattice *grid, State *state, Hamiltonian *hamiltonian, double *_external_pot_real, double *_external_pot_imag, double _a, double _b, double delta_t, double _norm, bool _imag_time)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a6aaf28e3e6bbd081b1fc265ec15d29aa">CPUBlock</a>(Lattice *grid, State *state1, State *state2, Hamiltonian2Component *hamiltonian, double **_external_pot_real, double **_external_pot_imag, double *_a, double *_b, double delta_t, double *_norm, bool _imag_time)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#af3abd008a3dbaff6ae23dea3c15826c1">delta_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#abbda37916bf738b17ada280ba8ad7297">delta_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#ad00aa21a18b6e405a10a4ae115f9840e">end_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#afec129a84f24bf2edbb1f210396e2c90">end_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a2f44d0948c6aa00eb910717179c62142">external_pot_imag</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#af285a82a8d880d4ddd97cc5cdb870115">external_pot_real</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a8b0dd0d9c4dc21683904e61a27b5bb5b">finish_halo_exchange</a>()</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a9efc3097e8b9a833514dd237414e2f10">get_name</a>() const </td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a7a35be3f518631a0258d1a947c504963">get_sample</a>(size_t dest_stride, size_t x, size_t y, size_t width, size_t height, double *dest_real, double *dest_imag, double *dest_real2=0, double *dest_imag2=0) const </td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a777e869431a735e014312ca94ac0a51b">halo_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#acf4731f15c133a4567af257cc46bc1c9">halo_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a23ae61c45c6cf32d4bebe195117fe2dc">imag_time</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#aa555f9462069eea10bd7dd6ad8591e88">inner_end_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a4ca4ed052a347fd4246c056fa3a6a6be">inner_end_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a4972dde1693b58b4422a8feb6c8dd4b0">inner_start_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#ae321d2919fd94318437c768bb2bf52dd">inner_start_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a903ba0b0dc66a6dbd6197087361d0faa">norm</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#afec8246432b79b981ec8c99cfd2dea97">normalization</a>()</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a8dbe6392b5d6ac40a07a0df20bcec977">p_imag</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a56e6d9999eadf02f77f232656fd03b16">p_real</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a5df82e6feb97e9cdcc3319b3c9c472a6">periods</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a801d0bfac75658e71b2c29ced7d95612">rabi_coupling</a>(double var, double delta_t)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a182e2504d17f8eee303b5ea135d56f8c">rot_coord_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a39f72dfe1d11a781d450258ca493e82b">rot_coord_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a321e01f0a02b06fd97673db61f64bc4d">run_kernel</a>()</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a913231ce80489114cac3049fcc137528">run_kernel_on_halo</a>()</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>runs_in_place</b>() const  (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>start_halo_exchange</b>() (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>wait_for_completion</b>(int iteration) (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~CPUBlock</b>() (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~ITrotterKernel</b>() (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#afd5132b25aa83d98049ffbdbca5ab070">sense</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a84f1ce6dec7bd8895ca711c38f578586">start_halo_exchange</a>()</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#aa098b9f34d017561ff9bb8b1ece3d708">start_x</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#ab6bb8a656766e0c7d9a39f0de467512a">start_y</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a66990263f9a58d55e185f34484427a7e">state_index</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#ae2313c71970c4821f3020693a5fe821a">tile_height</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a8d8a884fa497ac91319f44821e21e2d2">tile_width</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a613244d5a8aa74414587dd27f2b5bf64">tot_norm</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a2fcd6ae778923cec417329f725ab2183">two_wavefunctions</a></td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCPUBlock.html#a2c2f531ea9e297b1861e3f0ca9f94840">update_potential</a>(double *_external_pot_real, double *_external_pot_imag)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCPUBlock.html#a21c09d91fcbf3da84c2e6d5c96c8fed2">wait_for_completion</a>()</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~CPUBlock</b>() (defined in <a class="el" href="classCPUBlock.html">CPUBlock</a>)</td><td class="entry"><a class="el" href="classCPUBlock.html">CPUBlock</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~ITrotterKernel</b>() (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

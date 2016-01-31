@@ -22,9 +22,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
   </td>
  </tr>
@@ -39,6 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
+      <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -64,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -89,14 +94,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>finish_halo_exchange</b>()=0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_name</b>() const  =0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>get_sample</b>(size_t dest_stride, size_t x, size_t y, size_t width, size_t height, double *dest_real, double *dest_imag) const  =0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>run_kernel</b>()=0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>run_kernel_on_halo</b>()=0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>runs_in_place</b>() const  =0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>start_halo_exchange</b>()=0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>wait_for_completion</b>(int iteration)=0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classITrotterKernel.html#ad4011c6784553f183a6f7f6cba366fd5">calculate_squared_norm</a>(bool global=true) const  =0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classITrotterKernel.html#aeb2f6888e6bf985032f682d4c7b05ac1">finish_halo_exchange</a>()=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classITrotterKernel.html#acfcb79c79be0e225c6c04dfa215fe451">get_name</a>() const  =0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classITrotterKernel.html#a43e62d4289e3f2ac5b9b306bab75a121">get_sample</a>(size_t dest_stride, size_t x, size_t y, size_t width, size_t height, double *dest_real, double *dest_imag, double *dest_real2=0, double *dest_imag2=0) const  =0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classITrotterKernel.html#a3fe2636dccaa446541a4f07969af5732">normalization</a>()=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classITrotterKernel.html#ad1400c4fe27a82dc265ba321fd1a36d9">rabi_coupling</a>(double var, double delta_t)=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classITrotterKernel.html#a005c0908b297c041efcc2bea2aa84836">run_kernel</a>()=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classITrotterKernel.html#ad5434700d6e59ac252ba0a9bdccf3e4c">run_kernel_on_halo</a>()=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>runs_in_place</b>() const  =0 (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classITrotterKernel.html#aed01f679727aba2943b28ca7f4f99af7">start_halo_exchange</a>()=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classITrotterKernel.html#a09ab466e81ef35f5690139836b1dfdae">update_potential</a>(double *_external_pot_real, double *_external_pot_imag)=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classITrotterKernel.html#a3486f79df9768b14817e2b4063b851e8">wait_for_completion</a>()=0</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~ITrotterKernel</b>() (defined in <a class="el" href="classITrotterKernel.html">ITrotterKernel</a>)</td><td class="entry"><a class="el" href="classITrotterKernel.html">ITrotterKernel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
