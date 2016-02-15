@@ -9,7 +9,7 @@ var searchData=
   ['start_5fhalo_5fexchange',['start_halo_exchange',['../classCPUBlock.html#a84f1ce6dec7bd8895ca711c38f578586',1,'CPUBlock::start_halo_exchange()'],['../classITrotterKernel.html#aed01f679727aba2943b28ca7f4f99af7',1,'ITrotterKernel::start_halo_exchange()']]],
   ['start_5fx',['start_x',['../classCPUBlock.html#aa098b9f34d017561ff9bb8b1ece3d708',1,'CPUBlock']]],
   ['start_5fy',['start_y',['../classCPUBlock.html#ab6bb8a656766e0c7d9a39f0de467512a',1,'CPUBlock::start_y()'],['../classLattice.html#a03c465d3508619aecada3278d8bf8478',1,'Lattice::start_y()']]],
-  ['state',['State',['../classState.html',1,'State'],['../classSolver.html#a7dda1e092bba9f2e654445df5814a81c',1,'Solver::state()'],['../classState.html#a0b95e512c016fdbbed2f28ebc63830ad',1,'State::State(Lattice *grid, double *p_real=0, double *p_imag=0)'],['../classState.html#a96b36bab7c989a747c1fed7886bf8dcf',1,'State::State(const State &amp;obj)']]],
+  ['state',['State',['../classState.html',1,'State'],['../classState.html#a0b95e512c016fdbbed2f28ebc63830ad',1,'State::State(Lattice *grid, double *p_real=0, double *p_imag=0)'],['../classState.html#a96b36bab7c989a747c1fed7886bf8dcf',1,'State::State(const State &amp;obj)'],['../classSolver.html#a7dda1e092bba9f2e654445df5814a81c',1,'Solver::state()']]],
   ['state_5fb',['state_b',['../classSolver.html#ae0ac5328119b67aedd7d234ed1bc546b',1,'Solver']]],
   ['state_5findex',['state_index',['../classCPUBlock.html#a66990263f9a58d55e185f34484427a7e',1,'CPUBlock']]],
   ['static_5fpotential',['static_potential',['../classPotential.html#a6d9154fe48d9168c1bc238781489f253',1,'Potential']]]
