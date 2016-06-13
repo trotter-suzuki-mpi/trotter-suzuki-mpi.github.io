@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['massively_20parallel_20trotter_2dsuzuki_20solver',['Massively Parallel Trotter-Suzuki Solver',['../index.html',1,'']]],
   ['mass',['mass',['../classHarmonicPotential.html#a84c6074aaa70e4aea5339ffc5e1b68d7',1,'HarmonicPotential::mass()'],['../classHamiltonian.html#a664167df256a4054493cf979a5ec6d36',1,'Hamiltonian::mass()']]],
   ['mass_5fb',['mass_b',['../classHamiltonian2Component.html#ad815366d0a90b4c0f23ee2739f81db9a',1,'Hamiltonian2Component']]],
   ['matrix',['matrix',['../classPotential.html#ae865ac56ca471da36d21b97fed06d105',1,'Potential']]],

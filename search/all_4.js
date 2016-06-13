@@ -4,7 +4,7 @@ var searchData=
   ['end_5fy',['end_y',['../classCPUBlock.html#afec129a84f24bf2edbb1f210396e2c90',1,'CPUBlock::end_y()'],['../classLattice.html#aeca58b341004a9fa4311516eb4202929',1,'Lattice::end_y()']]],
   ['energy_5fexpected_5fvalues_5fupdated',['energy_expected_values_updated',['../classSolver.html#ab1991188dc0fadaa8bce87fe774e925c',1,'Solver']]],
   ['evolve',['evolve',['../classSolver.html#afef4d30f0fafcdd30e4bbd68ab4b8d18',1,'Solver']]],
-  ['evolving_5fpotential',['evolving_potential',['../classPotential.html#a0a1059118afeddae66f635babd983c4b',1,'Potential']]],
+  ['evolving_5fpotential',['evolving_potential',['../classPotential.html#a0356c0ac5863e4b1abcbd9841d9829af',1,'Potential']]],
   ['exp_5fstate',['exp_state',['../classExponentialState.html#adc5c93ffa7e0636d46d69754b779ce90',1,'ExponentialState']]],
   ['expected_5fvalues_5fupdated',['expected_values_updated',['../classState.html#a30a90a18e6065bfce9663f894c2fa13b',1,'State']]],
   ['exponentialstate',['ExponentialState',['../classExponentialState.html',1,'ExponentialState'],['../classExponentialState.html#a71d1e78827da7a429ba0e2370e1ec4b0',1,'ExponentialState::ExponentialState()']]],

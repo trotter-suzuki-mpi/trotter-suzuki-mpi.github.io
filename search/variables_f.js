@@ -8,5 +8,5 @@ var searchData=
   ['state',['state',['../classSolver.html#a7dda1e092bba9f2e654445df5814a81c',1,'Solver']]],
   ['state_5fb',['state_b',['../classSolver.html#ae0ac5328119b67aedd7d234ed1bc546b',1,'Solver']]],
   ['state_5findex',['state_index',['../classCPUBlock.html#a66990263f9a58d55e185f34484427a7e',1,'CPUBlock']]],
-  ['static_5fpotential',['static_potential',['../classPotential.html#a4c8f24098c9227447726818af31ad45c',1,'Potential']]]
+  ['static_5fpotential',['static_potential',['../classPotential.html#a6d9154fe48d9168c1bc238781489f253',1,'Potential']]]
 ];
