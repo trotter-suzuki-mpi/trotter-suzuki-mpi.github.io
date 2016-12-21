@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['delta_5ft',['delta_t',['../classSolver.html#a5245c60018e4b5ff9854d21a233513d6',1,'Solver']]],
-  ['delta_5fx',['delta_x',['../classCPUBlock.html#af3abd008a3dbaff6ae23dea3c15826c1',1,'CPUBlock']]],
-  ['delta_5fy',['delta_y',['../classCPUBlock.html#abbda37916bf738b17ada280ba8ad7297',1,'CPUBlock::delta_y()'],['../classLattice.html#acd95f5a76a1272b9bf380df2aca77373',1,'Lattice::delta_y()']]],
-  ['dim_5fy',['dim_y',['../classLattice.html#ad36af465d3c47a0e81711da4c37213d8',1,'Lattice']]],
-  ['download',['Download',['../md_download.html',1,'']]]
+  ['energy_5fexpected_5fvalues_5fupdated',['energy_expected_values_updated',['../classSolver.html#ab1991188dc0fadaa8bce87fe774e925c',1,'Solver']]],
+  ['evolve',['evolve',['../classSolver.html#afef4d30f0fafcdd30e4bbd68ab4b8d18',1,'Solver']]],
+  ['evolving_5fpotential',['evolving_potential',['../classPotential.html#a0356c0ac5863e4b1abcbd9841d9829af',1,'Potential']]],
+  ['exp_5fstate',['exp_state',['../classExponentialState.html#adc5c93ffa7e0636d46d69754b779ce90',1,'ExponentialState']]],
+  ['expected_5fvalues_5fupdated',['expected_values_updated',['../classState.html#a30a90a18e6065bfce9663f894c2fa13b',1,'State']]],
+  ['exponentialstate',['ExponentialState',['../classExponentialState.html',1,'ExponentialState'],['../classExponentialState.html#aaed73e0bdf39523cd0f7591de828b6ff',1,'ExponentialState::ExponentialState()']]],
+  ['external_5fpot_5fimag',['external_pot_imag',['../classSolver.html#a27fe2eff3bb6c18d15d089d9097303fd',1,'Solver']]],
+  ['external_5fpot_5freal',['external_pot_real',['../classSolver.html#aa5b25076c13592bb2db571792c711285',1,'Solver']]],
+  ['examples',['Examples',['../md_examples.html',1,'']]]
 ];

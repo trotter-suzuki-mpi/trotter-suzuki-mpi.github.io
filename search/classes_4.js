@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['itrotterkernel',['ITrotterKernel',['../classITrotterKernel.html',1,'']]]
+  ['potential',['Potential',['../classPotential.html',1,'']]]
 ];

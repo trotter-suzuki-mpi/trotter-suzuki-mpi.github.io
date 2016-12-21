@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['omega_5fi',['omega_i',['../classHamiltonian2Component.html#a68bfd9e1ceaac167b8c5814098eb4f5b',1,'Hamiltonian2Component']]],
-  ['omega_5fr',['omega_r',['../classHamiltonian2Component.html#ac1e3ac19366837747e820bd9e5572315',1,'Hamiltonian2Component']]],
-  ['omega_5fx',['omega_x',['../classGaussianState.html#aef9752d98c7ae3236eda669f243910ad',1,'GaussianState']]],
-  ['omega_5fy',['omega_y',['../classGaussianState.html#acb112ed63247fd79903daa0520eead43',1,'GaussianState']]],
-  ['omegay',['omegay',['../classHarmonicPotential.html#af7a789997d1887cc1ca8ec587699a69f',1,'HarmonicPotential']]]
+  ['rabi_5fenergy',['rabi_energy',['../classSolver.html#a707c56538ea67b82cb9229b216d88a6f',1,'Solver']]],
+  ['rot_5fcoord_5fx',['rot_coord_x',['../classHamiltonian.html#ac60d0d51f08d445c72837d138059595f',1,'Hamiltonian']]],
+  ['rot_5fcoord_5fy',['rot_coord_y',['../classHamiltonian.html#a4c18f841e75c157bcf4c7f3976c7d2ee',1,'Hamiltonian']]],
+  ['rotational_5fenergy',['rotational_energy',['../classSolver.html#a7b02299b5a2a9aaa856ccf3e25ce718c',1,'Solver']]]
 ];

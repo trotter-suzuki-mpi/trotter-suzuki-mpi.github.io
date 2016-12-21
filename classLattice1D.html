@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Massively Parallel Trotter-Suzuki Solver: Member List</title>
+<title>Massively Parallel Trotter-Suzuki Solver: Lattice1D Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,24 +87,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classLattice1D-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Hamiltonian Member List</div>  </div>
+<div class="title">Lattice1D Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classHamiltonian.html">Hamiltonian</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a51176e56a8b486cb7bae0fcfb931da43">angular_velocity</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a24307c921a272175963f66f85e16df71">coupling_a</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a0e5d649fbe4ab10fd1a7aaf6e31e950a">grid</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a26bafeb29c0d51e90ad73db330bfa868">Hamiltonian</a>(Lattice *grid, Potential *potential=0, double mass=1., double coupling_a=0., double angular_velocity=0., double rot_coord_x=0, double rot_coord_y=0)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a664167df256a4054493cf979a5ec6d36">mass</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a7eb6c2198c73ee1057b6b56d9bf94b49">potential</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#ac60d0d51f08d445c72837d138059595f">rot_coord_x</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a4c18f841e75c157bcf4c7f3976c7d2ee">rot_coord_y</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a44667e6b76fe6c773c1692ab44f28449">self_init</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Hamiltonian</b>() (defined in <a class="el" href="classHamiltonian.html">Hamiltonian</a>)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>This class defines the 1D lattice structure over which the state and potential are defined.  
+ <a href="classLattice1D.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="trottersuzuki_8h_source.html">trottersuzuki.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Lattice1D:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classLattice1D.png" usemap="#Lattice1D_map" alt=""/>
+  <map id="Lattice1D_map" name="Lattice1D_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab7a1a7fa3e11ee255945f795869e5c47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLattice1D.html#ab7a1a7fa3e11ee255945f795869e5c47">Lattice1D</a> (int dim, double length, bool periodic_x_axis=false)</td></tr>
+<tr class="separator:ab7a1a7fa3e11ee255945f795869e5c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class defines the 1D lattice structure over which the state and potential are defined. </p>
+<p>As to single-process execution, the lattice is a single tile which can be surrounded by a halo, in the case of periodic boundary conditions. As to multi-process execution, the lattice is divided in smaller lattices, dubbed tiles, one for each process. Each of the tiles is surrounded by a halo. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab7a1a7fa3e11ee255945f795869e5c47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Lattice1D::Lattice1D </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>periodic_x_axis</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lattice constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>Linear dimension of the chain lattice. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>Physical length of the lattice. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">periodic_x_axis</td><td>Boundary condition along the x axis (false=closed, true=periodic). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/pwittek/trotter-suzuki-mpi/src/<a class="el" href="trottersuzuki_8h_source.html">trottersuzuki.h</a></li>
+<li>/home/pwittek/trotter-suzuki-mpi/src/model.cpp</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

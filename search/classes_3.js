@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['hamiltonian',['Hamiltonian',['../classHamiltonian.html',1,'']]],
-  ['hamiltonian2component',['Hamiltonian2Component',['../classHamiltonian2Component.html',1,'']]],
-  ['harmonicpotential',['HarmonicPotential',['../classHarmonicPotential.html',1,'']]]
+  ['lattice1d',['Lattice1D',['../classLattice1D.html',1,'']]],
+  ['lattice2d',['Lattice2D',['../classLattice2D.html',1,'']]]
 ];

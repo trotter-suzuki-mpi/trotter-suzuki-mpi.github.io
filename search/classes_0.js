@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cpublock',['CPUBlock',['../classCPUBlock.html',1,'']]]
+  ['exponentialstate',['ExponentialState',['../classExponentialState.html',1,'']]]
 ];

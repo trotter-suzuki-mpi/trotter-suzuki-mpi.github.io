@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lattice',['Lattice',['../classLattice.html#a3a1e1cca897ec0c9ab4a0b27409e58d6',1,'Lattice']]],
-  ['loadtxt',['loadtxt',['../classState.html#a183e4d8b7cd185d12450dc2b9b0900fe',1,'State']]]
+  ['potential',['Potential',['../classPotential.html#a15f270a0b07e93264c63218f412db0b1',1,'Potential::Potential(Lattice *grid, char *filename)'],['../classPotential.html#ab1516d63c50c24d5149d1511f2bc58c9',1,'Potential::Potential(Lattice *grid, double *external_pot=0)'],['../classPotential.html#a6b16e74893d6f2e14f96f2cb0d2929a1',1,'Potential::Potential(Lattice *grid, double(*potential_function)(double x, double y))'],['../classPotential.html#aabbbf6655d863b5be90d1d3acdff0867',1,'Potential::Potential(Lattice *grid, double(*potential_function)(double x, double y, double t), int t=0)']]]
 ];

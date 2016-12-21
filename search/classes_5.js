@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['lattice',['Lattice',['../classLattice.html',1,'']]]
+  ['sinusoidstate',['SinusoidState',['../classSinusoidState.html',1,'']]],
+  ['solver',['Solver',['../classSolver.html',1,'']]],
+  ['state',['State',['../classState.html',1,'']]]
 ];

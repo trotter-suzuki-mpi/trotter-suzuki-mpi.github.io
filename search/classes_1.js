@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exponentialstate',['ExponentialState',['../classExponentialState.html',1,'']]]
+  ['gaussianstate',['GaussianState',['../classGaussianState.html',1,'']]]
 ];

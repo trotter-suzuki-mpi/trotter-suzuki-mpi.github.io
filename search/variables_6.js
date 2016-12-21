@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['h_5fa',['h_a',['../classSolver.html#aff041fccbe61863f5625af2a6605d506',1,'Solver']]],
-  ['h_5fb',['h_b',['../classSolver.html#afad2f46b82b5f1fcffb31ee3299e16a6',1,'Solver']]],
-  ['halo_5fx',['halo_x',['../classCPUBlock.html#a777e869431a735e014312ca94ac0a51b',1,'CPUBlock']]],
-  ['halo_5fy',['halo_y',['../classCPUBlock.html#acf4731f15c133a4567af257cc46bc1c9',1,'CPUBlock::halo_y()'],['../classLattice.html#a76191885782d5371449303e5d2c5e0ab',1,'Lattice::halo_y()']]],
-  ['hamiltonian',['hamiltonian',['../classSolver.html#ad196816d8e3b0ec909a13535aee74d59',1,'Solver']]],
-  ['has_5fparameters_5fchanged',['has_parameters_changed',['../classSolver.html#aa6ed7ad3e5973aba8d2d69b9a527986a',1,'Solver']]]
+  ['imag_5ftime',['imag_time',['../classSolver.html#ac92298a066d9525df6eb6e504ba6f044',1,'Solver']]],
+  ['inter_5fspecies_5fenergy',['inter_species_energy',['../classSolver.html#a62c3613eaa7e36e7177f4b120ecb5619',1,'Solver']]],
+  ['intra_5fspecies_5fenergy',['intra_species_energy',['../classSolver.html#a82b4191c01585f781864fe5eed15ef19',1,'Solver']]],
+  ['is_5fstatic',['is_static',['../classPotential.html#a9746ff3bd9a468288179fa4b1126f098',1,'Potential']]]
 ];
