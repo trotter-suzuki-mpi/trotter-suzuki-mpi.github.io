@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,22 +118,22 @@ Inheritance diagram for Lattice2D:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a83691edf539d1bba6d59cb000c9a5fc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLattice2D.html#a83691edf539d1bba6d59cb000c9a5fc5">Lattice2D</a> (int dim, double length, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.)</td></tr>
-<tr class="separator:a83691edf539d1bba6d59cb000c9a5fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88ca6b81328f88e9189dbed88c20ae2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLattice2D.html#a88ca6b81328f88e9189dbed88c20ae2e">Lattice2D</a> (int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.)</td></tr>
-<tr class="separator:a88ca6b81328f88e9189dbed88c20ae2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148eea07274294eb2d40b44a38a52148"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLattice2D.html#a148eea07274294eb2d40b44a38a52148">Lattice2D</a> (int dim, double length, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;)</td></tr>
+<tr class="separator:a148eea07274294eb2d40b44a38a52148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d807ad4cf6065f51ad2b7b9f29bff21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLattice2D.html#a9d807ad4cf6065f51ad2b7b9f29bff21">Lattice2D</a> (int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;)</td></tr>
+<tr class="separator:a9d807ad4cf6065f51ad2b7b9f29bff21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab8873f655f2491cb367166d1989d9e6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8873f655f2491cb367166d1989d9e6b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.)</td></tr>
-<tr class="separator:ab8873f655f2491cb367166d1989d9e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a3c1c2001e69629a2f5b7fe57e3dc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32a3c1c2001e69629a2f5b7fe57e3dc0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;)</td></tr>
+<tr class="separator:a32a3c1c2001e69629a2f5b7fe57e3dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines the 2D lattice structure over which the state and potential matrices are defined. </p>
 <p>As to single-process execution, the lattice is a single tile which can be surrounded by a halo, in the case of periodic boundary conditions. As to multi-process execution, the lattice is divided in smaller lattices, dubbed tiles, one for each process. Each of the tiles is surrounded by a halo. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a83691edf539d1bba6d59cb000c9a5fc5"></a>
+<a class="anchor" id="a148eea07274294eb2d40b44a38a52148"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -158,7 +165,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int dim_x, 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angular_velocity</em> = <code>0.</code>&#160;</td>
+          <td class="paramname"><em>angular_velocity</em> = <code>0.</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>coordinate_system</em> = <code>&quot;cartesian&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -175,13 +188,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int dim_x, 
     <tr><td class="paramdir">[in]</td><td class="paramname">periodic_x_axis</td><td>Boundary condition along the x axis (false=closed, true=periodic). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">periodic_y_axis</td><td>Boundary condition along the y axis (false=closed, true=periodic). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angular_velocity</td><td>Angular velocity of the frame of reference. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coordinate_system</td><td>Type of the coordinate system used. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a88ca6b81328f88e9189dbed88c20ae2e"></a>
+<a class="anchor" id="a9d807ad4cf6065f51ad2b7b9f29bff21"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -225,7 +239,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int dim_x, 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>angular_velocity</em> = <code>0.</code>&#160;</td>
+          <td class="paramname"><em>angular_velocity</em> = <code>0.</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>coordinate_system</em> = <code>&quot;cartesian&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -244,6 +264,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int dim_x, 
     <tr><td class="paramdir">[in]</td><td class="paramname">periodic_x_axis</td><td>Boundary condition along the x axis (false=closed, true=periodic). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">periodic_y_axis</td><td>Boundary condition along the y axis (false=closed, true=periodic). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angular_velocity</td><td>Angular velocity of the frame of reference. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coordinate_system</td><td>Type of the coordinate system used. </td></tr>
   </table>
   </dd>
 </dl>

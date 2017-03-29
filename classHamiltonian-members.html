@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -95,9 +102,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classHamiltonian.html">Hamiltonian</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a51176e56a8b486cb7bae0fcfb931da43">angular_velocity</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a24307c921a272175963f66f85e16df71">coupling_a</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a0e5d649fbe4ab10fd1a7aaf6e31e950a">grid</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a26bafeb29c0d51e90ad73db330bfa868">Hamiltonian</a>(Lattice *grid, Potential *potential=0, double mass=1., double coupling_a=0., double angular_velocity=0., double rot_coord_x=0, double rot_coord_y=0)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>azimuthal_potential</b>(double x, int angular_momentum) (defined in <a class="el" href="classHamiltonian.html">Hamiltonian</a>)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a24307c921a272175963f66f85e16df71">coupling_a</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a0e5d649fbe4ab10fd1a7aaf6e31e950a">grid</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#aed8e9ce9a2b652b6a135118f54b94ff2">Hamiltonian</a>(Lattice *grid, Potential *potential=0, double mass=1., double coupling_a=0., double LeeHuangYang_coupling_a=0., double angular_velocity=0., double rot_coord_x=0, double rot_coord_y=0)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a3093984b92cf18af0ea18e67e0143497">LeeHuangYang_coupling_a</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a664167df256a4054493cf979a5ec6d36">mass</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classHamiltonian.html#a7eb6c2198c73ee1057b6b56d9bf94b49">potential</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#ac60d0d51f08d445c72837d138059595f">rot_coord_x</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>

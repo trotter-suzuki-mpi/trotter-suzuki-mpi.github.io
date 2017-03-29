@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -95,23 +102,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a51176e56a8b486cb7bae0fcfb931da43">angular_velocity</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>azimuthal_potential</b>(double x, int angular_momentum) (defined in <a class="el" href="classHamiltonian.html">Hamiltonian</a>)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>azimuthal_potential_b</b>(double x, int angular_momentum) (defined in <a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a>)</td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classHamiltonian.html#a24307c921a272175963f66f85e16df71">coupling_a</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHamiltonian2Component.html#a45091419afd4b2670952f8d4618bb787">coupling_ab</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classHamiltonian2Component.html#ade4553d4ed4081722288dc73a239ef48">coupling_b</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a0e5d649fbe4ab10fd1a7aaf6e31e950a">grid</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a26bafeb29c0d51e90ad73db330bfa868">Hamiltonian</a>(Lattice *grid, Potential *potential=0, double mass=1., double coupling_a=0., double angular_velocity=0., double rot_coord_x=0, double rot_coord_y=0)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian.html#aed8e9ce9a2b652b6a135118f54b94ff2">Hamiltonian</a>(Lattice *grid, Potential *potential=0, double mass=1., double coupling_a=0., double LeeHuangYang_coupling_a=0., double angular_velocity=0., double rot_coord_x=0, double rot_coord_y=0)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classHamiltonian2Component.html#a1c69cd6e6dc9c761113019bfa4118e1b">Hamiltonian2Component</a>(Lattice *grid, Potential *potential=0, Potential *potential_b=0, double mass=1., double mass_b=1., double coupling_a=0., double coupling_ab=0., double coupling_b=0., double omega_r=0, double omega_i=0, double angular_velocity=0., double rot_coord_x=0, double rot_coord_y=0)</td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a664167df256a4054493cf979a5ec6d36">mass</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian2Component.html#ad815366d0a90b4c0f23ee2739f81db9a">mass_b</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian2Component.html#a68bfd9e1ceaac167b8c5814098eb4f5b">omega_i</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian2Component.html#ac1e3ac19366837747e820bd9e5572315">omega_r</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a7eb6c2198c73ee1057b6b56d9bf94b49">potential</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian2Component.html#ae18981a85c444f32061dfc5612716d92">potential_b</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#ac60d0d51f08d445c72837d138059595f">rot_coord_x</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a4c18f841e75c157bcf4c7f3976c7d2ee">rot_coord_y</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a44667e6b76fe6c773c1692ab44f28449">self_init</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Hamiltonian</b>() (defined in <a class="el" href="classHamiltonian.html">Hamiltonian</a>)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Hamiltonian2Component</b>() (defined in <a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a>)</td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a3093984b92cf18af0ea18e67e0143497">LeeHuangYang_coupling_a</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a664167df256a4054493cf979a5ec6d36">mass</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian2Component.html#ad815366d0a90b4c0f23ee2739f81db9a">mass_b</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian2Component.html#a68bfd9e1ceaac167b8c5814098eb4f5b">omega_i</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian2Component.html#ac1e3ac19366837747e820bd9e5572315">omega_r</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a7eb6c2198c73ee1057b6b56d9bf94b49">potential</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian2Component.html#ae18981a85c444f32061dfc5612716d92">potential_b</a></td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#ac60d0d51f08d445c72837d138059595f">rot_coord_x</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classHamiltonian.html#a4c18f841e75c157bcf4c7f3976c7d2ee">rot_coord_y</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classHamiltonian.html#a44667e6b76fe6c773c1692ab44f28449">self_init</a></td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Hamiltonian</b>() (defined in <a class="el" href="classHamiltonian.html">Hamiltonian</a>)</td><td class="entry"><a class="el" href="classHamiltonian.html">Hamiltonian</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Hamiltonian2Component</b>() (defined in <a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a>)</td><td class="entry"><a class="el" href="classHamiltonian2Component.html">Hamiltonian2Component</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,14 +117,14 @@ Inheritance diagram for Lattice1D:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7a1a7fa3e11ee255945f795869e5c47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLattice1D.html#ab7a1a7fa3e11ee255945f795869e5c47">Lattice1D</a> (int dim, double length, bool periodic_x_axis=false)</td></tr>
-<tr class="separator:ab7a1a7fa3e11ee255945f795869e5c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9da5c231705f01d7d65740c5f1094f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLattice1D.html#aba9da5c231705f01d7d65740c5f1094f">Lattice1D</a> (int dim, double length, bool periodic_x_axis=false, string coordinate_system=&quot;cartesian&quot;)</td></tr>
+<tr class="separator:aba9da5c231705f01d7d65740c5f1094f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines the 1D lattice structure over which the state and potential are defined. </p>
 <p>As to single-process execution, the lattice is a single tile which can be surrounded by a halo, in the case of periodic boundary conditions. As to multi-process execution, the lattice is divided in smaller lattices, dubbed tiles, one for each process. Each of the tiles is surrounded by a halo. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab7a1a7fa3e11ee255945f795869e5c47"></a>
+<a class="anchor" id="aba9da5c231705f01d7d65740c5f1094f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -137,7 +144,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>periodic_x_axis</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>periodic_x_axis</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>coordinate_system</em> = <code>&quot;cartesian&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -152,6 +165,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dim</td><td>Linear dimension of the chain lattice. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>Physical length of the lattice. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">periodic_x_axis</td><td>Boundary condition along the x axis (false=closed, true=periodic). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coordinate_system</td><td>Type of the coordinate system used. </td></tr>
   </table>
   </dd>
 </dl>

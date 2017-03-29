@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -80,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
+      <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
@@ -111,6 +119,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 &#160;
 
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>bessel_state1D()
+: <a class="el" href="classBesselState.html#a244d1d023ada25ebac59ec2f94815b95">BesselState</a>
+</li>
+<li>bessel_state2D()
+: <a class="el" href="classBesselState.html#a731577c054f9640c0228bd63c438a7ee">BesselState</a>
+</li>
+<li>BesselState()
+: <a class="el" href="classBesselState.html#ac8a9759127667a863adf79de4d420c5a">BesselState</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>calculate_energy_expected_values()
 : <a class="el" href="classSolver.html#aa84afb3dd2bcf5f398376ccbbe88a1c5">Solver</a>
@@ -129,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classExponentialState.html#adc5c93ffa7e0636d46d69754b779ce90">ExponentialState</a>
 </li>
 <li>ExponentialState()
-: <a class="el" href="classExponentialState.html#aaed73e0bdf39523cd0f7591de828b6ff">ExponentialState</a>
+: <a class="el" href="classExponentialState.html#aace4b7807bf9295904b52f8c89439c19">ExponentialState</a>
 </li>
 </ul>
 
@@ -139,7 +160,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classGaussianState.html#a913f52d134e8fea55b1b4777198885c0">GaussianState</a>
 </li>
 <li>GaussianState()
-: <a class="el" href="classGaussianState.html#ad841d871549794dbf2e7049df15935eb">GaussianState</a>
+: <a class="el" href="classGaussianState.html#a99945d73490ec4b2e2dcf0bb915a452b">GaussianState</a>
+</li>
+<li>get_expected_value()
+: <a class="el" href="classState.html#a7f49e50d416da6e4078535bfe85a17c4">State</a>
 </li>
 <li>get_inter_species_energy()
 : <a class="el" href="classSolver.html#acd920bc05bddaff2ebe80b25c3ee5f5b">Solver</a>
@@ -149,6 +173,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>get_kinetic_energy()
 : <a class="el" href="classSolver.html#a9ab0c2e624be8dc9e15cd6ebf4c83566">Solver</a>
+</li>
+<li>get_LeeHuangYang_energy()
+: <a class="el" href="classSolver.html#aa25a1b770707d65de8563388d9bbf277">Solver</a>
 </li>
 <li>get_mean_angular_momentum()
 : <a class="el" href="classState.html#a6378bc21834d31ec926dfddb0f70ff8b">State</a>
@@ -201,14 +228,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>get_value()
 : <a class="el" href="classHarmonicPotential.html#a72464735a8c9b86fbd9c9dab8ab9c431">HarmonicPotential</a>
-, <a class="el" href="classPotential.html#abe8918f1167e753bdd25cf74de693226">Potential</a>
+, <a class="el" href="classPotential.html#a1cadaa9d1f7bf5bfb8e328ef16cce1fb">Potential</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>Hamiltonian()
-: <a class="el" href="classHamiltonian.html#a26bafeb29c0d51e90ad73db330bfa868">Hamiltonian</a>
+: <a class="el" href="classHamiltonian.html#aed8e9ce9a2b652b6a135118f54b94ff2">Hamiltonian</a>
 </li>
 <li>Hamiltonian2Component()
 : <a class="el" href="classHamiltonian2Component.html#a1c69cd6e6dc9c761113019bfa4118e1b">Hamiltonian2Component</a>
@@ -237,10 +264,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>Lattice1D()
-: <a class="el" href="classLattice1D.html#ab7a1a7fa3e11ee255945f795869e5c47">Lattice1D</a>
+: <a class="el" href="classLattice1D.html#aba9da5c231705f01d7d65740c5f1094f">Lattice1D</a>
 </li>
 <li>Lattice2D()
-: <a class="el" href="classLattice2D.html#a83691edf539d1bba6d59cb000c9a5fc5">Lattice2D</a>
+: <a class="el" href="classLattice2D.html#a148eea07274294eb2d40b44a38a52148">Lattice2D</a>
 </li>
 <li>loadtxt()
 : <a class="el" href="classState.html#a183e4d8b7cd185d12450dc2b9b0900fe">State</a>
@@ -263,13 +290,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classSinusoidState.html#a54c05ca4697a3e47692001b458abbd45">SinusoidState</a>
 </li>
 <li>SinusoidState()
-: <a class="el" href="classSinusoidState.html#a4ffa76763d11b7b40722c1a331c82d87">SinusoidState</a>
+: <a class="el" href="classSinusoidState.html#aa7bcbef964e336cb3aa7a45369db5020">SinusoidState</a>
 </li>
 <li>Solver()
-: <a class="el" href="classSolver.html#a87801e81aefc38b4ed401e3b01a0c235">Solver</a>
+: <a class="el" href="classSolver.html#a475c3b57df612122e2a694c9eb83bb73">Solver</a>
 </li>
 <li>State()
-: <a class="el" href="classState.html#a0b95e512c016fdbbed2f28ebc63830ad">State</a>
+: <a class="el" href="classState.html#aa31ba550fd06d5408a69e9e69b6f2e60">State</a>
 </li>
 </ul>
 

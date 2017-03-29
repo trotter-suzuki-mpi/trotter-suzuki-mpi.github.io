@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['massively_20parallel_20trotter_2dsuzuki_20solver',['Massively Parallel Trotter-Suzuki Solver',['../index.html',1,'']]],
-  ['mass',['mass',['../classHarmonicPotential.html#a84c6074aaa70e4aea5339ffc5e1b68d7',1,'HarmonicPotential::mass()'],['../classHamiltonian.html#a664167df256a4054493cf979a5ec6d36',1,'Hamiltonian::mass()']]],
-  ['mass_5fb',['mass_b',['../classHamiltonian2Component.html#ad815366d0a90b4c0f23ee2739f81db9a',1,'Hamiltonian2Component']]],
-  ['matrix',['matrix',['../classPotential.html#ae865ac56ca471da36d21b97fed06d105',1,'Potential']]],
-  ['mean_5fangular_5fmomentum',['mean_angular_momentum',['../classState.html#a0443bdad5f2d7d07c1246d871906328f',1,'State']]],
-  ['mean_5fpxpx',['mean_PxPx',['../classState.html#ad6ea4dd8e3a97962343a92eb9b586758',1,'State']]],
-  ['mean_5fpypy',['mean_PyPy',['../classState.html#abbbf0b418ef3256d32a82df9f41c0a70',1,'State']]],
-  ['mean_5fx',['mean_x',['../classGaussianState.html#a2f834d1ee7729aa0f8cfdc99df149a6a',1,'GaussianState']]],
-  ['mean_5fxx',['mean_XX',['../classState.html#a8defbbd6529fb5b6665f00f2a6271b28',1,'State']]],
-  ['mean_5fy',['mean_y',['../classGaussianState.html#a7c2e1bab4381247156fd8af9bfae3a44',1,'GaussianState::mean_y()'],['../classHarmonicPotential.html#a91256c037cc9b2a0e7d5857af9b33d60',1,'HarmonicPotential::mean_y()']]],
-  ['mean_5fyy',['mean_YY',['../classState.html#affa31b0edc363365d52e5b36575ece66',1,'State']]]
+  ['lattice1d',['Lattice1D',['../classLattice1D.html',1,'Lattice1D'],['../classLattice1D.html#aba9da5c231705f01d7d65740c5f1094f',1,'Lattice1D::Lattice1D()']]],
+  ['lattice2d',['Lattice2D',['../classLattice2D.html',1,'Lattice2D'],['../classLattice2D.html#a148eea07274294eb2d40b44a38a52148',1,'Lattice2D::Lattice2D(int dim, double length, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;)'],['../classLattice2D.html#a9d807ad4cf6065f51ad2b7b9f29bff21',1,'Lattice2D::Lattice2D(int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;)']]],
+  ['leehuangyang_5fcoupling_5fa',['LeeHuangYang_coupling_a',['../classHamiltonian.html#a3093984b92cf18af0ea18e67e0143497',1,'Hamiltonian']]],
+  ['leehuangyang_5fenergy',['LeeHuangYang_energy',['../classSolver.html#aa2474b6c6f5a550e34c59898c4a183c7',1,'Solver']]],
+  ['loadtxt',['loadtxt',['../classState.html#a183e4d8b7cd185d12450dc2b9b0900fe',1,'State']]]
 ];

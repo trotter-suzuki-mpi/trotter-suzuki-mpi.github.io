@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['lattice1d',['Lattice1D',['../classLattice1D.html#ab7a1a7fa3e11ee255945f795869e5c47',1,'Lattice1D']]],
-  ['lattice2d',['Lattice2D',['../classLattice2D.html#a83691edf539d1bba6d59cb000c9a5fc5',1,'Lattice2D::Lattice2D(int dim, double length, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.)'],['../classLattice2D.html#a88ca6b81328f88e9189dbed88c20ae2e',1,'Lattice2D::Lattice2D(int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.)']]],
-  ['loadtxt',['loadtxt',['../classState.html#a183e4d8b7cd185d12450dc2b9b0900fe',1,'State']]]
+  ['imprint',['imprint',['../classState.html#a689fb03056006f79b38053335e2687f2',1,'State::imprint(complex&lt; double &gt;(*function)(double x))'],['../classState.html#a40eaea1a8718d3b42a9b98f9cad3cdc0',1,'State::imprint(complex&lt; double &gt;(*function)(double x, double y))']]],
+  ['init_5fkernel',['init_kernel',['../classSolver.html#a14b309e105daedb226a2741eca5faf40',1,'Solver']]],
+  ['init_5fstate',['init_state',['../classState.html#a685e1eac2dda9546271d3bb4dbb4dbea',1,'State::init_state(complex&lt; double &gt;(*ini_state)(double x))'],['../classState.html#ae657c1127bda113649b4295949958494',1,'State::init_state(complex&lt; double &gt;(*ini_state)(double x, double y))']]],
+  ['initialize_5fexp_5fpotential',['initialize_exp_potential',['../classSolver.html#afce854ac47699d84f726fbb19213c0a0',1,'Solver']]]
 ];

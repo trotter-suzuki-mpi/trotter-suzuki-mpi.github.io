@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -88,13 +95,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_k"><span>k</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
-      <li class="current"><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li class="current"><a href="#index_z"><span>z</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,6 +125,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>angular_momentum
+: <a class="el" href="classBesselState.html#a0fa21b5a33ee61881bec998a393efd7c">BesselState</a>
+, <a class="el" href="classState.html#a25d1401ca844b5a831ab1a96948b967b">State</a>
+</li>
 <li>angular_velocity
 : <a class="el" href="classHamiltonian.html#a51176e56a8b486cb7bae0fcfb931da43">Hamiltonian</a>
 </li>
@@ -176,12 +189,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
-<li>h_a
-: <a class="el" href="classSolver.html#aff041fccbe61863f5625af2a6605d506">Solver</a>
-</li>
-<li>h_b
-: <a class="el" href="classSolver.html#afad2f46b82b5f1fcffb31ee3299e16a6">Solver</a>
-</li>
 <li>hamiltonian
 : <a class="el" href="classSolver.html#ad196816d8e3b0ec909a13535aee74d59">Solver</a>
 </li>
@@ -216,6 +223,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>kinetic_energy
 : <a class="el" href="classSolver.html#ac2796f95cd98f72792a47a2b7f8c98a8">Solver</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>LeeHuangYang_coupling_a
+: <a class="el" href="classHamiltonian.html#a3093984b92cf18af0ea18e67e0143497">Hamiltonian</a>
+</li>
+<li>LeeHuangYang_energy
+: <a class="el" href="classSolver.html#aa2474b6c6f5a550e34c59898c4a183c7">Solver</a>
 </li>
 </ul>
 
@@ -258,7 +275,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
 <li>n_y
-: <a class="el" href="classExponentialState.html#a753373fb8f35b7011a32c911bb145fed">ExponentialState</a>
+: <a class="el" href="classBesselState.html#adee2ae3dcd2c969a8b4ecb3c140ba5a2">BesselState</a>
+, <a class="el" href="classExponentialState.html#a753373fb8f35b7011a32c911bb145fed">ExponentialState</a>
 , <a class="el" href="classSinusoidState.html#a2d15cbf89eb65711e0cbe751f9a074bf">SinusoidState</a>
 </li>
 <li>norm
@@ -267,6 +285,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>norm2
 : <a class="el" href="classSolver.html#ac1117f609b88a8f666b12960718251d8">Solver</a>
 , <a class="el" href="classState.html#a547f367dd2ac6437ff2f1a979f59309c">State</a>
+</li>
+<li>normalization
+: <a class="el" href="classBesselState.html#ac5f2e4507951d90b4ce0e34a53edf7b4">BesselState</a>
 </li>
 </ul>
 
@@ -298,7 +319,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classState.html#aa136418a4aeb94dd43f36abdfc6d601b">State</a>
 </li>
 <li>phase
-: <a class="el" href="classExponentialState.html#a72d71d0051694eb716d023069a6afebf">ExponentialState</a>
+: <a class="el" href="classBesselState.html#a654535a23220dd290c84581013844051">BesselState</a>
+, <a class="el" href="classExponentialState.html#a72d71d0051694eb716d023069a6afebf">ExponentialState</a>
 , <a class="el" href="classGaussianState.html#a70d08627bf0ad1fdf0e5fae75edb9a3c">GaussianState</a>
 , <a class="el" href="classSinusoidState.html#a38177991dd0b7fbaff89fbc8113730aa">SinusoidState</a>
 </li>
@@ -366,6 +388,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>total_energy
 : <a class="el" href="classSolver.html#a2b0487b16edfffca5f3e779c6c869cae">Solver</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_z"></a>- z -</h3><ul>
+<li>zero
+: <a class="el" href="classBesselState.html#a4ecf6ece677b9f3b79465afd89bf34b6">BesselState</a>
 </li>
 </ul>
 </div><!-- contents -->

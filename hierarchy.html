@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -102,9 +109,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr id="row_2_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classHarmonicPotential.html" target="_self">HarmonicPotential</a></td><td class="desc">This class defines the external potential that is used for <a class="el" href="classHamiltonian.html" title="This class defines the Hamiltonian of a single component system. ">Hamiltonian</a> class </td></tr>
 <tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classSolver.html" target="_self">Solver</a></td><td class="desc">This class defines the evolution tasks </td></tr>
 <tr id="row_4_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_4_" class="arrow" onclick="toggleFolder('4_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classState.html" target="_self">State</a></td><td class="desc">This class defines the quantum state </td></tr>
-<tr id="row_4_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classExponentialState.html" target="_self">ExponentialState</a></td><td class="desc">This class defines a quantum state with exponential like wave function </td></tr>
-<tr id="row_4_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classGaussianState.html" target="_self">GaussianState</a></td><td class="desc">This class defines a quantum state with gaussian like wave function </td></tr>
-<tr id="row_4_2_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classSinusoidState.html" target="_self">SinusoidState</a></td><td class="desc">This class defines a quantum state with sinusoidal like wave function </td></tr>
+<tr id="row_4_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classBesselState.html" target="_self">BesselState</a></td><td class="desc">This class defines a quantum state with Bessel function of the first kind, along the radial coordinate </td></tr>
+<tr id="row_4_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classExponentialState.html" target="_self">ExponentialState</a></td><td class="desc">This class defines a quantum state with exponential like wave function </td></tr>
+<tr id="row_4_2_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classGaussianState.html" target="_self">GaussianState</a></td><td class="desc">This class defines a quantum state with gaussian like wave function </td></tr>
+<tr id="row_4_3_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classSinusoidState.html" target="_self">SinusoidState</a></td><td class="desc">This class defines a quantum state with sinusoidal like wave function </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->

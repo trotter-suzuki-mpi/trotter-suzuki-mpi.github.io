@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -136,6 +143,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="memitem:a6b6d5a32556689250db6c7ee2eddacdf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#a6b6d5a32556689250db6c7ee2eddacdf">get_intra_species_energy</a> (size_t which=3)</td></tr>
 <tr class="memdesc:a6b6d5a32556689250db6c7ee2eddacdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the intra-particles interaction energy of the system.  <a href="#a6b6d5a32556689250db6c7ee2eddacdf">More...</a><br /></td></tr>
 <tr class="separator:a6b6d5a32556689250db6c7ee2eddacdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25a1b770707d65de8563388d9bbf277"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa25a1b770707d65de8563388d9bbf277"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#aa25a1b770707d65de8563388d9bbf277">get_LeeHuangYang_energy</a> (void)</td></tr>
+<tr class="memdesc:aa25a1b770707d65de8563388d9bbf277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LeeHuangYang energy (only first component);. <br /></td></tr>
+<tr class="separator:aa25a1b770707d65de8563388d9bbf277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd920bc05bddaff2ebe80b25c3ee5f5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd920bc05bddaff2ebe80b25c3ee5f5b"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#acd920bc05bddaff2ebe80b25c3ee5f5b">get_inter_species_energy</a> (void)</td></tr>
 <tr class="memdesc:acd920bc05bddaff2ebe80b25c3ee5f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the inter-particles interaction energy of the system. <br /></td></tr>
@@ -193,14 +204,6 @@ Private Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#ac92298a066d9525df6eb6e504ba6f044">imag_time</a></td></tr>
 <tr class="memdesc:ac92298a066d9525df6eb6e504ba6f044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the time of evolution is imaginary(true) or real(false). <br /></td></tr>
 <tr class="separator:ac92298a066d9525df6eb6e504ba6f044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff041fccbe61863f5625af2a6605d506"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff041fccbe61863f5625af2a6605d506"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#aff041fccbe61863f5625af2a6605d506">h_a</a> [2]</td></tr>
-<tr class="memdesc:aff041fccbe61863f5625af2a6605d506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters of the evolution operator regarding the kinetic operator of the first-component. <br /></td></tr>
-<tr class="separator:aff041fccbe61863f5625af2a6605d506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad2f46b82b5f1fcffb31ee3299e16a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afad2f46b82b5f1fcffb31ee3299e16a6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#afad2f46b82b5f1fcffb31ee3299e16a6">h_b</a> [2]</td></tr>
-<tr class="memdesc:afad2f46b82b5f1fcffb31ee3299e16a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters of the evolution operator regarding the kinetic operator of the second-component. <br /></td></tr>
-<tr class="separator:afad2f46b82b5f1fcffb31ee3299e16a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b25076c13592bb2db571792c711285"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5b25076c13592bb2db571792c711285"></a>
 double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#aa5b25076c13592bb2db571792c711285">external_pot_real</a></td></tr>
 <tr class="memdesc:aa5b25076c13592bb2db571792c711285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real part of the evolution operator regarding the external potential. <br /></td></tr>
@@ -265,6 +268,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#a5280b40ef6d0fafc90c6a5371a5030ec">tot_intra_species_energy</a></td></tr>
 <tr class="memdesc:a5280b40ef6d0fafc90c6a5371a5030ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total intra-particles interaction energy of the system. <br /></td></tr>
 <tr class="separator:a5280b40ef6d0fafc90c6a5371a5030ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2474b6c6f5a550e34c59898c4a183c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2474b6c6f5a550e34c59898c4a183c7"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#aa2474b6c6f5a550e34c59898c4a183c7">LeeHuangYang_energy</a></td></tr>
+<tr class="memdesc:aa2474b6c6f5a550e34c59898c4a183c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">LeeHuangYang energy term. <br /></td></tr>
+<tr class="separator:aa2474b6c6f5a550e34c59898c4a183c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c3613eaa7e36e7177f4b120ecb5619"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62c3613eaa7e36e7177f4b120ecb5619"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSolver.html#a62c3613eaa7e36e7177f4b120ecb5619">inter_species_energy</a></td></tr>
 <tr class="memdesc:a62c3613eaa7e36e7177f4b120ecb5619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inter-particles interaction energy of the system. <br /></td></tr>

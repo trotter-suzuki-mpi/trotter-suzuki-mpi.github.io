@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -94,9 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classLattice2D.html">Lattice2D</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>init</b>(int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.) (defined in <a class="el" href="classLattice2D.html">Lattice2D</a>)</td><td class="entry"><a class="el" href="classLattice2D.html">Lattice2D</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classLattice2D.html#a83691edf539d1bba6d59cb000c9a5fc5">Lattice2D</a>(int dim, double length, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.)</td><td class="entry"><a class="el" href="classLattice2D.html">Lattice2D</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classLattice2D.html#a88ca6b81328f88e9189dbed88c20ae2e">Lattice2D</a>(int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0.)</td><td class="entry"><a class="el" href="classLattice2D.html">Lattice2D</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>init</b>(int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;) (defined in <a class="el" href="classLattice2D.html">Lattice2D</a>)</td><td class="entry"><a class="el" href="classLattice2D.html">Lattice2D</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classLattice2D.html#a148eea07274294eb2d40b44a38a52148">Lattice2D</a>(int dim, double length, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;)</td><td class="entry"><a class="el" href="classLattice2D.html">Lattice2D</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLattice2D.html#a9d807ad4cf6065f51ad2b7b9f29bff21">Lattice2D</a>(int dim_x, double length_x, int dim_y, double length_y, bool periodic_x_axis=false, bool periodic_y_axis=false, double angular_velocity=0., string coordinate_system=&quot;cartesian&quot;)</td><td class="entry"><a class="el" href="classLattice2D.html">Lattice2D</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

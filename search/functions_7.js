@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['set_5fexp_5fpotential',['set_exp_potential',['../classSolver.html#aeb3bc5009d553486e68f82a321582da3',1,'Solver']]],
-  ['sinusoid_5fstate',['sinusoid_state',['../classSinusoidState.html#a54c05ca4697a3e47692001b458abbd45',1,'SinusoidState']]],
-  ['sinusoidstate',['SinusoidState',['../classSinusoidState.html#a4ffa76763d11b7b40722c1a331c82d87',1,'SinusoidState']]],
-  ['solver',['Solver',['../classSolver.html#a475c3b57df612122e2a694c9eb83bb73',1,'Solver::Solver(Lattice *grid, State *state, Hamiltonian *hamiltonian, double delta_t, string kernel_type=&quot;cpu&quot;)'],['../classSolver.html#a87801e81aefc38b4ed401e3b01a0c235',1,'Solver::Solver(Lattice *grid, State *state1, State *state2, Hamiltonian2Component *hamiltonian, double delta_t, string kernel_type=&quot;cpu&quot;)']]],
-  ['state',['State',['../classState.html#a0b95e512c016fdbbed2f28ebc63830ad',1,'State::State(Lattice *grid, double *p_real=0, double *p_imag=0)'],['../classState.html#a96b36bab7c989a747c1fed7886bf8dcf',1,'State::State(const State &amp;obj)']]]
+  ['potential',['Potential',['../classPotential.html#a15f270a0b07e93264c63218f412db0b1',1,'Potential::Potential(Lattice *grid, char *filename)'],['../classPotential.html#ab1516d63c50c24d5149d1511f2bc58c9',1,'Potential::Potential(Lattice *grid, double *external_pot=0)'],['../classPotential.html#a6b16e74893d6f2e14f96f2cb0d2929a1',1,'Potential::Potential(Lattice *grid, double(*potential_function)(double x, double y))'],['../classPotential.html#aabbbf6655d863b5be90d1d3acdff0867',1,'Potential::Potential(Lattice *grid, double(*potential_function)(double x, double y, double t), int t=0)']]]
 ];

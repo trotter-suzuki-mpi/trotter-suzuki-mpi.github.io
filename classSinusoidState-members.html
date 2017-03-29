@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -94,8 +101,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classSinusoidState.html">SinusoidState</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classState.html#a438d6d21d08ce71467b2a5772e79a967">calculate_expected_values</a>(void)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classState.html#a30a90a18e6065bfce9663f894c2fa13b">expected_values_updated</a></td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classState.html#a25d1401ca844b5a831ab1a96948b967b">angular_momentum</a></td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classState.html#a438d6d21d08ce71467b2a5772e79a967">calculate_expected_values</a>(void)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classState.html#a30a90a18e6065bfce9663f894c2fa13b">expected_values_updated</a></td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classState.html#a7f49e50d416da6e4078535bfe85a17c4">get_expected_value</a>(string _operator)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classState.html#a6378bc21834d31ec926dfddb0f70ff8b">get_mean_angular_momentum</a>(void)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classState.html#ad7e9cca37f7c8260f92fdfcd6b2b31b3">get_mean_px</a>(void)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classState.html#a8ecfa9af58d99b56d98598ea0c326ce1">get_mean_pxpx</a>(void)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
@@ -132,13 +141,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classSinusoidState.html#a38177991dd0b7fbaff89fbc8113730aa">phase</a></td><td class="entry"><a class="el" href="classSinusoidState.html">SinusoidState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classState.html#a5517200f76f2551e7315e98a1980fb20">self_init</a></td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classSinusoidState.html#a54c05ca4697a3e47692001b458abbd45">sinusoid_state</a>(double x, double y)</td><td class="entry"><a class="el" href="classSinusoidState.html">SinusoidState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSinusoidState.html#a4ffa76763d11b7b40722c1a331c82d87">SinusoidState</a>(Lattice2D *grid, int n_x=1, int n_y=1, double norm=1, double phase=0, double *p_real=0, double *p_imag=0)</td><td class="entry"><a class="el" href="classSinusoidState.html">SinusoidState</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classState.html#a0b95e512c016fdbbed2f28ebc63830ad">State</a>(Lattice *grid, double *p_real=0, double *p_imag=0)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classState.html#a96b36bab7c989a747c1fed7886bf8dcf">State</a>(const State &amp;obj)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classState.html#a27f7fee2862e69626961721c8b99f6b8">write_particle_density</a>(string fileprefix)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classState.html#a53650338770697ddfc73ff4db8f4a55f">write_phase</a>(string fileprefix)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classState.html#a30ef4054140d4add7904c2e75b879b2d">write_to_file</a>(string fileprefix)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classState.html#afab438d92b90dc18d194dbd9c9c8bab3">~State</a>()</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSinusoidState.html#aa7bcbef964e336cb3aa7a45369db5020">SinusoidState</a>(Lattice1D *grid, int n_x=1, double norm=1, double phase=0, double *p_real=0, double *p_imag=0)</td><td class="entry"><a class="el" href="classSinusoidState.html">SinusoidState</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classSinusoidState.html#a4ffa76763d11b7b40722c1a331c82d87">SinusoidState</a>(Lattice2D *grid, int n_x=1, int n_y=1, double norm=1, double phase=0, double *p_real=0, double *p_imag=0)</td><td class="entry"><a class="el" href="classSinusoidState.html">SinusoidState</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classState.html#aa31ba550fd06d5408a69e9e69b6f2e60">State</a>(Lattice *grid, int angular_momentum=0, double *p_real=0, double *p_imag=0)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classState.html#a96b36bab7c989a747c1fed7886bf8dcf">State</a>(const State &amp;obj)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classState.html#a27f7fee2862e69626961721c8b99f6b8">write_particle_density</a>(string fileprefix)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classState.html#a53650338770697ddfc73ff4db8f4a55f">write_phase</a>(string fileprefix)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classState.html#a30ef4054140d4add7904c2e75b879b2d">write_to_file</a>(string fileprefix)</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classState.html#afab438d92b90dc18d194dbd9c9c8bab3">~State</a>()</td><td class="entry"><a class="el" href="classState.html">State</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

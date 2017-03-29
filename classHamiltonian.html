@@ -14,6 +14,12 @@
 <script type="text/javascript">
   $(document).ready(function() { init_search(); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="vortex.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Massively Parallel Trotter-Suzuki Solver
-   &#160;<span id="projectnumber">1.6.1</span>
+   &#160;<span id="projectnumber">1.6.2</span>
    </div>
   </td>
  </tr>
@@ -42,9 +48,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="md_download.html"><span>Download&#160;and&#160;Installation</span></a></li>
       <li><a href="md_tutorial.html"><span>Tutorial</span></a></li>
+      <li><a href="md_TSapproximation.html"><span>Mathematical&#160;Details</span></a></li>
       <li><a href="md_examples.html"><span>Examples</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="md_changes.html"><span>Revision&#160;History</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -113,8 +120,11 @@ Inheritance diagram for Hamiltonian:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a26bafeb29c0d51e90ad73db330bfa868"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHamiltonian.html#a26bafeb29c0d51e90ad73db330bfa868">Hamiltonian</a> (Lattice *<a class="el" href="classHamiltonian.html#a0e5d649fbe4ab10fd1a7aaf6e31e950a">grid</a>, <a class="el" href="classPotential.html">Potential</a> *<a class="el" href="classHamiltonian.html#a7eb6c2198c73ee1057b6b56d9bf94b49">potential</a>=0, double <a class="el" href="classHamiltonian.html#a664167df256a4054493cf979a5ec6d36">mass</a>=1., double <a class="el" href="classHamiltonian.html#a24307c921a272175963f66f85e16df71">coupling_a</a>=0., double <a class="el" href="classHamiltonian.html#a51176e56a8b486cb7bae0fcfb931da43">angular_velocity</a>=0., double <a class="el" href="classHamiltonian.html#ac60d0d51f08d445c72837d138059595f">rot_coord_x</a>=0, double <a class="el" href="classHamiltonian.html#a4c18f841e75c157bcf4c7f3976c7d2ee">rot_coord_y</a>=0)</td></tr>
-<tr class="separator:a26bafeb29c0d51e90ad73db330bfa868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77cf24fa2d08a5936cb6b8f2f8070814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77cf24fa2d08a5936cb6b8f2f8070814"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>azimuthal_potential</b> (double x, int angular_momentum)</td></tr>
+<tr class="separator:a77cf24fa2d08a5936cb6b8f2f8070814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8e9ce9a2b652b6a135118f54b94ff2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHamiltonian.html#aed8e9ce9a2b652b6a135118f54b94ff2">Hamiltonian</a> (Lattice *<a class="el" href="classHamiltonian.html#a0e5d649fbe4ab10fd1a7aaf6e31e950a">grid</a>, <a class="el" href="classPotential.html">Potential</a> *<a class="el" href="classHamiltonian.html#a7eb6c2198c73ee1057b6b56d9bf94b49">potential</a>=0, double <a class="el" href="classHamiltonian.html#a664167df256a4054493cf979a5ec6d36">mass</a>=1., double <a class="el" href="classHamiltonian.html#a24307c921a272175963f66f85e16df71">coupling_a</a>=0., double <a class="el" href="classHamiltonian.html#a3093984b92cf18af0ea18e67e0143497">LeeHuangYang_coupling_a</a>=0., double <a class="el" href="classHamiltonian.html#a51176e56a8b486cb7bae0fcfb931da43">angular_velocity</a>=0., double <a class="el" href="classHamiltonian.html#ac60d0d51f08d445c72837d138059595f">rot_coord_x</a>=0, double <a class="el" href="classHamiltonian.html#a4c18f841e75c157bcf4c7f3976c7d2ee">rot_coord_y</a>=0)</td></tr>
+<tr class="separator:aed8e9ce9a2b652b6a135118f54b94ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -130,6 +140,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHamiltonian.html#a24307c921a272175963f66f85e16df71">coupling_a</a></td></tr>
 <tr class="memdesc:a24307c921a272175963f66f85e16df71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coupling constant of intra-particle interaction. <br /></td></tr>
 <tr class="separator:a24307c921a272175963f66f85e16df71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3093984b92cf18af0ea18e67e0143497"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3093984b92cf18af0ea18e67e0143497"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHamiltonian.html#a3093984b92cf18af0ea18e67e0143497">LeeHuangYang_coupling_a</a></td></tr>
+<tr class="memdesc:a3093984b92cf18af0ea18e67e0143497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coupling constant of the Lee-Huang-Yang term. <br /></td></tr>
+<tr class="separator:a3093984b92cf18af0ea18e67e0143497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51176e56a8b486cb7bae0fcfb931da43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51176e56a8b486cb7bae0fcfb931da43"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHamiltonian.html#a51176e56a8b486cb7bae0fcfb931da43">angular_velocity</a></td></tr>
 <tr class="memdesc:a51176e56a8b486cb7bae0fcfb931da43"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frame of reference rotates with this angular velocity. <br /></td></tr>
@@ -157,7 +171,7 @@ Lattice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines the <a class="el" href="classHamiltonian.html" title="This class defines the Hamiltonian of a single component system. ">Hamiltonian</a> of a single component system. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a26bafeb29c0d51e90ad73db330bfa868"></a>
+<a class="anchor" id="aed8e9ce9a2b652b6a135118f54b94ff2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -184,6 +198,12 @@ Lattice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
           <td></td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>coupling_a</em> = <code>0.</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>LeeHuangYang_coupling_a</em> = <code>0.</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -217,6 +237,7 @@ Lattice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
     <tr><td class="paramdir">[in]</td><td class="paramname">potential</td><td><a class="el" href="classPotential.html" title="This class defines the external potential that is used for Hamiltonian class. ">Potential</a> object. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mass</td><td>Mass of the particle. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">coupling_a</td><td>Coupling constant of intra-particle interaction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">LeeHuangYang_coupling_a</td><td>Coupling constant of the Lee-Huang-Yang term of the first component. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">angular_velocity</td><td>The frame of reference rotates with this angular velocity. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rot_coord_x</td><td>X coordinate of the center of rotation. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rot_coord_y</td><td>Y coordinate of the center of rotation. </td></tr>
